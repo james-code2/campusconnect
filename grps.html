@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Groups</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#142B4C',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-brand text-white px-10 py-5 flex justify-between items-center flex-wrap gap-5">
+        <div>
+            <h1 class="text-2xl font-bold mb-1">CampusConnect</h1>
+            <p class="text-sm opacity-90">University Campus Portal</p>
+        </div>
+        <nav class="flex gap-8 items-center flex-wrap">
+            <a href="db.html" class="text-white hover:opacity-80">Dashboard</a>
+            <a href="clndr.html" class="text-white hover:opacity-80">Calendar</a>
+            <a href="grps.html" class="text-white hover:opacity-80">Groups</a>
+            <a href="orgs.html" class="text-white hover:opacity-80">Organizations</a>
+            <a href="evnt.html" class="text-white hover:opacity-80">Events</a>
+        </nav>
+        <div class="flex gap-4 items-center">
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer text-xl">🔔</div>
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer text-xl">👤</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="px-10 py-10 max-w-7xl mx-auto">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-4xl font-bold">Groups</h2>
+            <button class="bg-brand text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90">Create Group</button>
+        </div>
+
+        <!-- Search Section -->
+        <div class="flex gap-4 mb-12">
+            <input type="text" placeholder="Search Groups" class="flex-1 border-2 border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-400 bg-white">
+            <select class="border-2 border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-400 bg-white">
+                <option>All Categories</option>
+            </select>
+            <button class="bg-brand text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90">Search</button>
+        </div>
+
+        <!-- Featured Groups Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- Card 1 -->
+            <div class="bg-white border-2 border-gray-300 rounded-xl p-8 flex flex-col">
+                <h3 class="text-2xl font-bold mb-6">Project Team — Campus App</h3>
+                <p class="text-gray-600 mb-8 flex-grow">Frontend + Backend Looking for UI/UX devs.</p>
+                <button class="bg-brand text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 w-full">Join</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white border-2 border-gray-300 rounded-xl p-8 flex flex-col">
+                <h3 class="text-2xl font-bold mb-6">Study Group — Philosophy</h3>
+                <p class="text-gray-600 mb-2">Study • 6 members</p>
+                <p class="text-gray-600 mb-8 flex-grow">Weekly meetups for PHIL 210.</p>
+                <button class="bg-brand text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 w-full">Join</button>
+            </div>
+        </div>
+
+        <!-- App Dev Groups -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-brand text-white rounded-xl p-6 flex justify-between items-center">
+                <h3 class="text-xl font-bold">App Dev</h3>
+                <button class="bg-white text-brand px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">Join</button>
+            </div>
+
+            <div class="bg-brand text-white rounded-xl p-6 flex justify-between items-center">
+                <h3 class="text-xl font-bold">App Dev</h3>
+                <button class="bg-white text-brand px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">Join</button>
+            </div>
+
+            <div class="bg-brand text-white rounded-xl p-6 flex justify-between items-center">
+                <h3 class="text-xl font-bold">App Dev</h3>
+                <button class="bg-white text-brand px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">Join</button>
+            </div>
+
+            <div class="bg-brand text-white rounded-xl p-6 flex justify-between items-center">
+                <h3 class="text-xl font-bold">App Dev</h3>
+                <button class="bg-white text-brand px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">Join</button>
+            </div>
+        </div>
+
+        <!-- My Groups Section -->
+        <h3 class="text-3xl font-bold mb-8">My Groups</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- My Groups Card 1 -->
+            <div class="bg-white border-2 border-gray-300 rounded-xl p-8 flex flex-col">
+                <h4 class="text-2xl font-bold mb-6">Math Study Group</h4>
+                <p class="text-gray-600 mb-8 flex-grow">Weekly study sessions for Calculus III. Focus on problem-solving and exam prep.</p>
+                <button class="bg-brand text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 w-full">Leave</button>
+            </div>
+
+            <!-- My Groups Card 2 -->
+            <div class="bg-white border-2 border-gray-300 rounded-xl p-8 flex flex-col">
+                <h4 class="text-2xl font-bold mb-6">Literature Circle</h4>
+                <p class="text-gray-600 mb-8 flex-grow">Discussion group for American Literature course. Currently reading The Great Gatsby.</p>
+                <button class="bg-brand text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 w-full">Leave</button>
+            </div>
+
+            <!-- My Groups Card 3 -->
+            <div class="bg-white border-2 border-gray-300 rounded-xl p-8 flex flex-col">
+                <h4 class="text-2xl font-bold mb-6">CS-401 Project Team</h4>
+                <p class="text-gray-600 mb-8 flex-grow">Working on the senior capstone project - developing a campus navigation app.</p>
+                <button class="bg-brand text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 w-full">Leave</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

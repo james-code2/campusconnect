@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Assignments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#142B4C',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-brand text-white px-10 py-5 flex justify-between items-center flex-wrap gap-5">
+        <div>
+            <h1 class="text-2xl font-bold mb-1">CampusConnect</h1>
+            <p class="text-sm opacity-90">University Campus Portal</p>
+        </div>
+        <nav class="flex gap-8 items-center flex-wrap">
+            <a href="db.html" class="text-white hover:opacity-80">Dashboard</a>
+            <a href="clndr.html" class="text-white hover:opacity-80">Calendar</a>
+            <a href="grps.html" class="text-white hover:opacity-80">Groups</a>
+            <a href="orgs.html" class="text-white hover:opacity-80">Organizations</a>
+            <a href="evnt.html" class="text-white hover:opacity-80">Events</a>
+        </nav>
+        <div class="flex gap-4 items-center">
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer text-xl">🔔</div>
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer text-xl">👤</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="px-10 py-10 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold mb-8">My Assignments</h2>
+
+        <!-- Search Section -->
+        <div class="flex gap-4 mb-12">
+            <input type="text" placeholder="Search Assignments" class="flex-1 border-2 border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-400 bg-white">
+            <select class="border-2 border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-400 bg-white">
+                <option>All Categories</option>
+            </select>
+            <button class="bg-brand text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90">Search</button>
+        </div>
+
+        <!-- Assignments List -->
+        <div class="bg-brand text-white rounded-xl overflow-hidden mb-16">
+            <div class="flex items-center justify-between px-6 py-4 border-b border-blue-900">
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold">Essay on Aristotle's Self Concept</h3>
+                    <p class="text-sm text-blue-200">PHIL - Philosophy 1</p>
+                </div>
+                <div class="text-right mr-4">
+                    <p class="text-sm">Due: Oct 15, 2023 • 11:59 PM</p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="bg-white text-brand px-4 py-2 rounded-lg font-semibold hover:bg-gray-100">+ Add Work</button>
+                    <button class="bg-white text-brand px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">Submit</button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between px-6 py-4 border-b border-blue-900">
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold">Group Project: Campus App Prototype</h3>
+                    <p class="text-sm text-blue-200">CC106- Computer Programming</p>
+                </div>
+                <div class="text-right mr-4">
+                    <p class="text-sm">Due: Oct 15, 2023 • 11:59 PM</p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="bg-white text-brand px-4 py-2 rounded-lg font-semibold hover:bg-gray-100">+ Add Work</button>
+                    <button class="bg-white text-brand px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">Submit</button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between px-6 py-4 border-b border-blue-900">
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold">Essay on Rizal Retraction</h3>
+                    <p class="text-sm text-blue-200">GEC- Philippine History</p>
+                </div>
+                <div class="text-right mr-4">
+                    <p class="text-sm">Due: Oct 15, 2023 • 11:59 PM</p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="bg-white text-brand px-4 py-2 rounded-lg font-semibold hover:bg-gray-100">+ Add Work</button>
+                    <button class="bg-white text-brand px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">Submit</button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between px-6 py-4 border-b border-blue-900">
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold">Calculus III Problem Set #5</h3>
+                    <p class="text-sm text-blue-200">MATH-301 - Mathematics</p>
+                </div>
+                <div class="text-right mr-4">
+                    <p class="text-sm">Due: Oct 15, 2023 • 11:59 PM</p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="bg-white text-brand px-4 py-2 rounded-lg font-semibold hover:bg-gray-100">+ Add Work</button>
+                    <button class="bg-white text-brand px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">Submit</button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between px-6 py-4">
+                <div class="flex-grow">
+                    <h3 class="text-lg font-bold">Physics Homework #3</h3>
+                    <p class="text-sm text-blue-200">PHYS-201 - Physics</p>
+                </div>
+                <div class="text-right mr-4">
+                    <p class="text-sm">Due: Oct 15, 2023 • 11:59 PM</p>
+                </div>
+                <div class="flex gap-3">
+                    <button class="bg-white text-brand px-4 py-2 rounded-lg font-semibold hover:bg-gray-100">+ Add Work</button>
+                    <button class="bg-white text-brand px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submitted Section -->
+        <h3 class="text-3xl font-bold mb-8">Submitted</h3>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Submitted Cards -->
+            <div class="lg:col-span-2 space-y-4">
+                <div class="bg-white border-2 border-gray-300 rounded-xl p-6">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h4 class="text-lg font-bold mb-1">History Research Paper</h4>
+                            <p class="text-gray-600 mb-2">GEC- Philippine History</p>
+                            <p class="text-green-600 font-semibold text-sm">Submitted: Oct 10, 2023 • Grade: 92/100</p>
+                        </div>
+                        <button class="bg-brand text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90">View</button>
+                    </div>
+                </div>
+
+                <div class="bg-white border-2 border-gray-300 rounded-xl p-6">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h4 class="text-lg font-bold mb-1">Physics Homework #3</h4>
+                            <p class="text-gray-600 mb-2">PHYS-201 - Physics</p>
+                            <p class="text-green-600 font-semibold text-sm">Submitted: Oct 10, 2023 • Grade: 92/100</p>
+                        </div>
+                        <button class="bg-brand text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90">View</button>
+                    </div>
+                </div>
+
+                <div class="bg-white border-2 border-gray-300 rounded-xl p-6">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h4 class="text-lg font-bold mb-1">Physics Homework #3</h4>
+                            <p class="text-gray-600 mb-2">PHYS-201 - Physics</p>
+                            <p class="text-green-600 font-semibold text-sm">Submitted: Oct 10, 2023 • Grade: 92/100</p>
+                        </div>
+                        <button class="bg-brand text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90">View</button>
+                    </div>
+                </div>
+
+               
+
+            <!-- Assignments Summary Card -->
+            <div class="bg-brand text-white rounded-xl p-8 h-fit">
+                <h4 class="text-2xl font-bold mb-8 text-center">Assignments</h4>
+                <div class="space-y-6">
+                    <div class="text-center">
+                        <p class="text-4xl font-bold">5</p>
+                        <p class="text-yellow-400 font-semibold">Assigned</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-bold">3</p>
+                        <p class="text-green-400 font-semibold">Submitted</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-bold">1</p>
+                        <p class="text-red-400 font-semibold">Missing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
